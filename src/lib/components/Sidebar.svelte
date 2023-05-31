@@ -20,6 +20,8 @@
 
   let modal: HTMLDialogElement
 
+  $: paragraphs = splitTextIntoParagraphs(getSelectedText($rawText, $selection))
+
   export let loading = false
   let dump = ''
   let judge = ''
@@ -122,7 +124,7 @@
         <Textarea bind:value={dump} fontSize="0.8rem" />
       </div>
     </div>
-  {:else if $selection !== null}
+  {:else if $selection !== null && paragraphs}
     <div class="btn-group variant-ghost">
       <button on:click|preventDefault={async () => await generateVariants('rewrite')}>
         Rewrite
@@ -139,8 +141,8 @@
     </div>
 
     <div class="selection">
-      {#each splitTextIntoParagraphs(getSelectedText($rawText, $selection)) as paragraphs}
-        <p>{paragraphs}</p>
+      {#each paragraphs as paragraph}
+        <p>{paragraph}</p>
       {/each}
     </div>
 

@@ -50,8 +50,8 @@ export const getSelectedTextBounds = (event: MouseEvent): Selection => {
 
   const hasText = getSelectedText(text, newSelection).trim().length > 0
 
-  return newSelection
-  if (hasText) return hasText ? newSelection : null
+  // return newSelection
+  return hasText ? newSelection : null
 }
 
 // Updates the selection based on the keyboard event. If there is an existing selection, it returns the updated selection with the current selected text. Otherwise, it returns null.
