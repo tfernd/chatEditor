@@ -60,11 +60,37 @@ To get started:
 
 ## Installation
 
-To use chatEditor, clone this repository and use Node.js to create a server.
+<!-- TODO add non-dev option -->
 
-## How to use?
+To start using chatEditor, you need to follow these steps to set it up on your local machine:
 
-Close this repo, use node-js to create a server.
+1. Clone the repository by running the following command in your terminal:
+
+   ```bash
+   git clone https://github.com/tfernd/chatEditor
+   ```
+
+2. Navigate into the cloned directory:
+
+   ```bash
+   cd chatEditor
+   ```
+
+3. Install the required dependencies by running:
+
+   ```bash
+   npm install
+   ```
+
+4. Once the installation is complete, start the server by running the following command:
+
+   ```bash
+   npm run dev -- --open
+   ```
+
+   This command will launch the chatEditor server, and your default browser will automatically open the application.
+
+Now you are ready to use chatEditor and explore its features on your local environment.
 
 ## TO-DO list
 
