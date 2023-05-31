@@ -46,7 +46,7 @@ To get started:
 - **Expand**: Adds additional details to your selected text, increasing its length.
 - **Custom**: Tailors the text based on the prompt you provide in the "Extra information/Custom prompt" section below.
 
-6. The AI-generated variants, showcased in the "Options" stepper below, can be used to replace your original text. Select the variant that best suits your needs.
+3. The AI-generated variants, showcased in the "Options" stepper below, can be used to replace your original text. Select the variant that best suits your needs.
 
 ## Installation
 
