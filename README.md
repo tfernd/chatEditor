@@ -4,6 +4,13 @@
 
 chatEditor is a powerful tool designed to aid writers in utilizing large language models (LLMs) effectively. Understanding how to write effective prompts for these LLMs can be challenging. chatEditor simplifies this process by providing an intuitive interface to interact with LLMs, allowing users to improve their writing skills.
 
+<img src='./assets/entry.png' width="600">
+<details>
+  <summary>See more app screenshots</summary>
+  <img src='./assets/rewrite.png' width="600">
+  <img src='./assets/judge.png' width="600">
+</details>
+
 ## How to Write Effective Prompts?
 
 Large language models (LLMs) are predictive tools that generate text based on the input they receive. They operate by predicting the next word, or token, in a sequence, one at a time. However, the way they function is fundamentally different from the human writing process. Humans have the ability to envisage a complete narrative, no matter how vague or precise, and direct their writing accordingly.
