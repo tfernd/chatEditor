@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"@floating-ui/dom": "^1.2.9",
 		"@skeletonlabs/skeleton": "^1.6.2",
-		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-node": "^1.2.4",
 		"@sveltejs/kit": "^1.5.0",
 		"@tailwindcss/typography": "^0.5.9",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
@@ -46,5 +46,8 @@
 	"type": "module",
 	"dependencies": {
 		"word-counting": "^1.1.4"
-	}
+	},
+	"engines": {
+		"node": ">=18.16"
+	  }
 }
