@@ -15,7 +15,7 @@
 
 <div class="fallback">
   <h3 class="h3">
-    Welcome to the <b><i>chatEditor</i></b>
+    Welcome to the <a class="anchor" href="https://github.com/tfernd/chatEditor">chatEditor</a>
   </h3>
 
   <span>Budget: {$tokenBudget.toLocaleString()} tokens (${costInDollars.toFixed(2)})</span>
@@ -71,6 +71,11 @@
 
 <style lang="scss">
   .fallback {
+    .anchor {
+      color: blue;
+      font-style: oblique;
+      font-weight: 700;
+    }
     .line {
       margin-top: 10px;
       height: 10px;
