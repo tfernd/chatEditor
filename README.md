@@ -14,11 +14,11 @@ The answer lies in providing a rich context.
 
 For instance, instead of instructing an LLM with a vague command like `Write a book about cyberpunk crime-solving`, a more productive approach is to provide a specific, detailed context:
 
-`
+```
 Enhance the text below by adding richer vocabulary and more detail:
 
 Synopsis: James was a detective in a cyberpunk world. At the age of 30 and battling alcoholism, he longed for one case that would establish his credibility. And then, one day, an unexpected event unfolded. (What was it?)
-`
+```
 
 By doing so, the LLM has a better reference point and can generate text that aligns closely with our intent, effectively guiding the text generation process.
 
