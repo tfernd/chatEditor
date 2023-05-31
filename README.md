@@ -1,35 +1,56 @@
 # chatEditor
 
-chatEditor is a powerful tool for writers. It forces writers to use large languge models LLM correctly. Prompt engerninng i hard. not many people do it. chatEditor come to rescue people who are not that good at prompting or want to improve their writing.
+## Introduction
 
-## How to prompt?
+chatEditor is a powerful tool designed to aid writers in utilizing large language models (LLMs) effectively. Understanding how to write effective prompts for these LLMs can be challenging. chatEditor simplifies this process by providing an intuitive interface to interact with LLMs, allowing users to improve their writing skills.
 
-LLMs are predictive tools, they predict the next word (token). They do it one at the time. When humans write, we do differently. We can imagine the whole story (as cloudy or clear as we want). So we know what to write, how to steer our text.
+## How to Write Effective Prompts?
 
-LLMs are not capable of thinking ahead like this. So we have to tame them. Make then do our bidding. how?
+Large language models (LLMs) are predictive tools that generate text based on the input they receive. They operate by predicting the next word, or token, in a sequence, one at a time. However, the way they function is fundamentally different from the human writing process. Humans have the ability to envisage a complete narrative, no matter how vague or precise, and direct their writing accordingly.
 
-By providing context.
+LLMs, on the other hand, lack this foresight. Consequently, it's up to us to guide them effectively. But how do we achieve this?
 
-Examples:
-Do not do this:
+The answer lies in providing a rich context.
 
-`Write a book about cyberpunk crime solving`
-
-Instead do this:
+For instance, instead of instructing an LLM with a vague command like `Write a book about cyberpunk crime-solving`, a more productive approach is to provide a specific, detailed context:
 
 `
-Improve the text below, add more rich vocabulary and more information:
+Enhance the text below by adding richer vocabulary and more detail:
 
-Synopsis: James was a detective. He lived in a cyberpunk world. He was 30. He was alcoholic. He just needed one case to prove himself. Just one! One day, something happen. (what?)
+Synopsis: James was a detective in a cyberpunk world. At the age of 30 and battling alcoholism, he longed for one case that would establish his credibility. And then, one day, an unexpected event unfolded. (What was it?)
 `
 
-In this way, the LMM will be referencing our work to creating new text, thus properly guiding and stearing the generation process.
+By doing so, the LLM has a better reference point and can generate text that aligns closely with our intent, effectively guiding the text generation process.
 
-chatEditor comes to aid writers doing exactuly this, but in an easier and simpler interface.
+The purpose of chatEditor is to make this complex task simpler and more accessible. It presents users with an intuitive interface where they can easily prompt the LLM to rewrite or expand upon selected sentences or paragraphs. Moreover, they can provide custom prompts or ask the AI to critique their text, identifying potential areas for improvement. The goal is to empower users to fully leverage the capabilities of LLMs, all within a user-friendly environment.
 
-Users can select a sentence or paragraph of whole paragraphs and ask the LLM AI easily to rewrite it for them. Or to add more details. Or to use a custom prompt (think of adding details to the instruction).
+## Features
 
-Users can also ask the AI to judge their text. To find flaws, areas to improve.
+chatEditor can:
+
+- **Rewrite text**: Users can select a sentence, paragraph, or even multiple paragraphs and ask the LLM AI to rewrite it for them.
+- **Expand on text**: Users can ask the LLM AI to add more details to a selected piece of text.
+- **Custom prompts**: Users can provide custom prompts, enhancing the flexibility and specificity of the output.
+- **Critique text**: Users can also ask the AI to judge their text, identifying flaws and areas for improvement.
+
+## How To Use
+
+After installing and starting chatEditor, you'll interact with a user-friendly interface designed to help you create more effective prompts for LLMs.
+
+To get started:
+
+1. Begin by selecting text in the editor pane. Use Ctrl + Click to select an entire sentence or Alt + Click to select an entire paragraph.
+2. Use the buttons in the side-bar to interact with the AI:
+
+- **Rewrite**: Improves the readability and fluency of your selected text.
+- **Expand**: Adds additional details to your selected text, increasing its length.
+- **Custom**: Tailors the text based on the prompt you provide in the "Extra information/Custom prompt" section below.
+
+6. The AI-generated variants, showcased in the "Options" stepper below, can be used to replace your original text. Select the variant that best suits your needs.
+
+## Installation
+
+To use chatEditor, clone this repository and use Node.js to create a server.
 
 ## How to use?
 
@@ -37,65 +58,20 @@ Close this repo, use node-js to create a server.
 
 ## TO-DO list
 
-- [ ] Make website for easier people using
+- [ ] Develop a website for easier user access
 - [ ] Add options for using different models
-- [ ] Improve CSS. Make UI prettier.
-- [ ] Fix stepper (finished step)
-- [ ] Add streaming to chatGPT, so users get a better feedback
-- [ ] Fix context. Sometimes chatGPT get confused and tries to use the context when rewriting. We dont want it to rewrite the context but just to referer to it. how to fix this?
-- [ ] Add a overlay to the textarea, so the user can see the selected text all the time
+- [ ] Improve CSS to enhance user interface
+- [ ] Fix issues with the stepper (completed steps)
+- [ ] Add streaming to chat
+- [ ] Refine context management in chatGPT to avoid unwanted rewriting
+- [ ] Add an overlay to the textarea for constant visibility of selected text
 
-<!-- The text below is from the UI, it is to help write a better README.md -->
-<div class="fallback">
-  <h3 class="h3">
-    Welcome to the <b><i>chatEditor</i></b>
-  </h3>
+## Contributing
 
-  <hr class="line !border-t-2" />
+Contributions are welcome! Please create an issue to discuss the changes before making a pull request.
 
-  <p>Begin by selecting text in the editor pane. Here are some helpful tips:</p>
-  <ul>
-    <li>
-      Use <strong>Ctrl + Click</strong>
-      to select an entire sentence.
-    </li>
-    <li>
-      Use <strong>Alt + Click</strong>
-      to select an entire paragraph.
-    </li>
-  </ul>
+## License
 
-  <hr class="line !border-t-2" />
+MIT
 
-  <p>Use the buttons in this side-bar to enhance your text:</p>
-  <ul>
-    <li>
-      <strong>Rewrite:</strong>
-      Improves the readability and fluency of your selected text.
-    </li>
-    <li>
-      <strong>Expand:</strong>
-      Adds additional details to your selected text, increasing its length.
-    </li>
-    <li>
-      <strong>Custom:</strong>
-      Tailors the text based on the prompt you provide in the "Extra information/Custom prompt" section
-      below.
-    </li>
-  </ul>
-
-  <hr class="line !border-t-2" />
-
-  <p>
-    <i>
-      The AI-generated variants, showcased in the "Options" stepper below, can be used to replace
-      your original text. Select the variant that best suits your needs.
-    </i>
-  </p>
-
-  <hr class="line !border-t-2" />
-
-  <button type="button" class="btn variant-filled" class:hasKey on:click={setApiKey}>
-    Add {hasKey ? 'new' : ''} API key
-  </button>
-</div>
+Thank you for considering chatEditor for your writing needs!
