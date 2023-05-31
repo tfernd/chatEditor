@@ -4,6 +4,8 @@
 
 chatEditor is an effective tool designed to assist writers in effectively using Large Language Models (LLMs) such as chatGPT. Writing effective prompts for these LLMs can be challenging, but chatEditor simplifies the process by providing a user-friendly interface to interact with LLMs, thus allowing users to improve their writing skills more efficiently.
 
+To test it, visit the chatEditor website: https://chat-editor.onrender.com.
+
 <img src='./assets/entry.png' width="600">
 <details>
   <summary>See more app screenshots</summary>
