@@ -46,5 +46,8 @@
 	"type": "module",
 	"dependencies": {
 		"word-counting": "^1.1.4"
+	},
+	"engines": {
+		"node": ">=18.16"
 	}
 }
