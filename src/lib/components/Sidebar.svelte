@@ -53,6 +53,8 @@
     let content = ''
     if (info && mode !== 'custom') content += `<details>${info}</details>\n\n`
     if (contextText) content += `<context>${contextText}</context>\n\n`
+    if (mode !== 'judge' && contextText)
+      content += `* IMPORTANT: Do not modify or recycle any part of the provided context as it is solely intended as a reference for rewriting the <text> below!\n\n`
     content += `<text>${selectedText}</text>`
 
     let user = `${instruction}\n\n${content}`
