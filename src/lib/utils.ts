@@ -119,3 +119,10 @@ export const getContextSelection = (
 
   return contextText.trim()
 }
+
+export const wordCounter = (text: string): number => {
+  // Split the text by spaces, newlines, and tabs
+  const words = text.trim().split(/\s+/).filter(Boolean)
+
+  return words.length
+}

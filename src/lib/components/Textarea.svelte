@@ -1,5 +1,5 @@
 <script lang="ts">
-  import wordsCounter from 'word-counting'
+  import { wordCounter } from '../utils'
 
   export let value: string = ''
   export let placeholder: string = ''
@@ -10,7 +10,7 @@
   let counter: HTMLElement
 
   // TODO add overlay to textarea
-  $: words = wordsCounter(value).wordsCount
+  $: words = wordCounter(value)
   $: {
     if (textarea && counter) {
       const pos = textarea.getBoundingClientRect()
