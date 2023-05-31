@@ -72,6 +72,6 @@ Contributions are welcome! Please create an issue to discuss the changes before 
 
 ## License
 
-MIT
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 Thank you for considering chatEditor for your writing needs!

@@ -1,7 +1,15 @@
 {
+
 	"name": "chat-editor",
 	"version": "0.0.1",
 	"private": true,
+	"license": "MIT",
+	"author": "Thales Fernandes",
+	"email": "thalesfdfernandes@gmail.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tfernd/chatEditor"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
