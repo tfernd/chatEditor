@@ -94,14 +94,26 @@ To start using chatEditor, you need to follow these steps to set it up on your l
 
 Now you are ready to use chatEditor and explore its features on your local environment.
 
+## OpenAI API Key
+
+To utilize the chatEditor tool, you'll need an OpenAI API key. Follow the steps below to obtain your key:
+
+1. Visit the OpenAI website at [openai](https://openai.com) and sign in to your account. If you don't have an account yet, you'll need to create one. By creating an account, you'll also receive a $5 credit.
+
+2. Once you're logged in, navigate to the API section by visiting [api-keys](https://platform.openai.com/account/api-keys). Look for the option to generate an API key.
+
+3. Generate a new API key and ensure that you store it securely. Remember, the API key is sensitive information that should never be shared publicly.
+
+4. Copy the generated API key and keep it readily accessible. You'll need to provide this key when running chatEditor. It's recommended to save the API key to a file on your computer for easy access and safekeeping.
+
 ## TO-DO list
 
-- [ ] Develop a website for easier user access
+- [x] Develop a website for easier user access
+- [x] Refine context management in chatGPT to avoid unwanted rewriting
 - [ ] Add options for using different models
 - [ ] Improve CSS to enhance user interface
 - [ ] Fix issues with the stepper (completed steps)
 - [ ] Add streaming to chat
-- [ ] Refine context management in chatGPT to avoid unwanted rewriting
 - [ ] Add an overlay to the textarea for constant visibility of selected text
 
 ## Contributing
